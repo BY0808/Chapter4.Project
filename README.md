@@ -1,6 +1,7 @@
 # Chapter4.Project
  Personal Project
 
+<details>
 <summary>
  Day1. 캐릭터 움직이기 구현
 </summary>
