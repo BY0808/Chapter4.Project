@@ -12,15 +12,23 @@ public class SelectPlayer : MonoBehaviour
 
     private void Awake()
     {
-        anim = GetComponent<SpriteRenderer>().GetComponent<Animator>();
+        anim = GetComponentInChildren<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     //마우스 버튼을 눌렀다가 떼었을 때만 호출 메소드
     private void OnMouseUpAsButton()
     {
-        SelectResult();
-        OnSelect("isWalking");
+        PlayerData.instance.currentCharacter = character;
+        OnSelect();
+        
+        for (int i = 0; i < selectPlayers.Length; i++)
+        {
+            if (selectPlayers[i] != this)
+            {
+                selectPlayers[i].OnDeselect();
+            }
+        }
     }
 
     private void SelectResult()
@@ -29,9 +37,16 @@ public class SelectPlayer : MonoBehaviour
         PlayerData.instance.currentCharacter = character;
     }
 
-    private void OnSelect(string boolName)
+    private void OnSelect()
     {
-        anim.SetBool(boolName, true);
+        SelectResult();
+        anim.SetBool("isWalking", true);
         spriteRenderer.color = new Color(1f,1f, 1f);
+    }
+
+    private void OnDeselect()
+    {
+        anim.SetBool("isWalking", false);
+        spriteRenderer.color = new Color(0f, 0f, 0f);
     }
 }
