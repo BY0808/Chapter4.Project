@@ -214,11 +214,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef679d9899a202e4ca8935b294a4ce48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: 0
-  selectPlayers:
-  - {fileID: 1999198735}
-  - {fileID: 468866628}
-  - {fileID: 1450619696}
+  isWalking: 0
+  character: 1
 --- !u!61 &468866629
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1007,11 +1004,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef679d9899a202e4ca8935b294a4ce48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: 0
-  selectPlayers:
-  - {fileID: 1999198735}
-  - {fileID: 468866628}
-  - {fileID: 1450619696}
+  isWalking: 0
+  character: 2
 --- !u!61 &1450619697
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1460,11 +1454,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef679d9899a202e4ca8935b294a4ce48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isWalking: 0
   character: 0
-  selectPlayers:
-  - {fileID: 1999198735}
-  - {fileID: 468866628}
-  - {fileID: 1450619696}
 --- !u!61 &1999198736
 BoxCollider2D:
   m_ObjectHideFlags: 0

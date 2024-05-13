@@ -28,5 +28,5 @@ public class PlayerData : MonoBehaviour
         }
     }
 
-    public CharacterList currentCharacter;
+    public CharacterList currentCharacter = CharacterList.Chef;
 }

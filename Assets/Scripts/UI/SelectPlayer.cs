@@ -8,7 +8,6 @@ public class SelectPlayer : MonoBehaviour
     public CharacterList character;
     Animator anim;
     SpriteRenderer spriteRenderer;
-    public SelectPlayer[] selectPlayers;
 
     private void Awake()
     {
@@ -17,17 +16,23 @@ public class SelectPlayer : MonoBehaviour
     }
 
     //마우스 버튼을 눌렀다가 떼었을 때만 호출 메소드
-    private void OnMouseUpAsButton()
+    private void OnMouseDown()
     {
-        PlayerData.instance.currentCharacter = character;
-        OnSelect();
-        
-        for (int i = 0; i < selectPlayers.Length; i++)
+        if (anim.GetBool("isWalking"))
         {
-            if (selectPlayers[i] != this)
+            OnDeselect();
+        }
+        else
+        {
+            SelectPlayer[] allPlayers = FindObjectsOfType<SelectPlayer>();
+            foreach (SelectPlayer player in allPlayers)
             {
-                selectPlayers[i].OnDeselect();
+                if (player != this && player.anim.GetBool("isWalking"))
+                {
+                    player.OnDeselect();
+                }
             }
+            OnSelect();
         }
     }
 
