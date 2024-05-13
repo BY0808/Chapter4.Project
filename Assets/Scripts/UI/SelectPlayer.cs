@@ -1,28 +1,21 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.TextCore.Text;
-
-
-public enum CharacterDic
-{
-    CHEF, MUSHROOM, CRAB
-}
 
 public class SelectPlayer : MonoBehaviour
 {
-    //싱글톤화!
-    public static SelectPlayer instance;
-    private void Awake()
+    public CharacterList character;
+
+    //마우스 버튼을 눌렀다가 떼었을 때만 호출 메소드
+    private void OnMouseDown()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else if (instance != null) return;
-        //씬 전환시 오브젝트 미파괴
-        DontDestroyOnLoad(gameObject);
+        SelectResult();
     }
 
-    public Character currentCharacter;
+    private void SelectResult()
+    {
+        //선택한 캐릭터를 PlayerData에 저장
+        PlayerData.instance.currentCharacter = character;
+    }
 }
