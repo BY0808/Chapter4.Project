@@ -17,7 +17,7 @@
 4. 인게임 캐릭터 선택
 5. NPC 대화
 
-[자료]
+[자료]<br>
 ![_2024_05_14_13_23_34_958-ezgif com-video-to-gif-converter](https://github.com/BY0808/Chapter4.Project/assets/166494058/a7535709-19b1-4966-ad37-ce85a26cf23b)
 
 <details>
