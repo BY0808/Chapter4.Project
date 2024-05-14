@@ -23,6 +23,11 @@ public class CharacterNameSet : MonoBehaviour
 
             //게임시작
             SceneManager.LoadScene("MainScene");
+
+            if (Time.timeScale == 0.0f)
+            {
+                Time.timeScale = 1.0f;
+            }
         }
         else
         {

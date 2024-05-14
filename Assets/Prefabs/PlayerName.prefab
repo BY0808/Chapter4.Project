@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7854919536452967608}
   - component: {fileID: 5792706419035237617}
   - component: {fileID: 8500700197538903057}
+  - component: {fileID: 7689186438451342734}
   m_Layer: 5
   m_Name: PlayerName
   m_TagString: Untagged
@@ -134,7 +135,7 @@ MonoBehaviour:
   m_HideSoftKeyboard: 0
   m_CharacterValidation: 5
   m_RegexValue: 
-  m_GlobalPointSize: 28
+  m_GlobalPointSize: 32
   m_CharacterLimit: 10
   m_OnEndEdit:
     m_PersistentCalls:
@@ -175,6 +176,20 @@ MonoBehaviour:
   m_isRichTextEditingAllowed: 0
   m_LineLimit: 0
   m_InputValidator: {fileID: 0}
+--- !u!114 &7689186438451342734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3122848075432917657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ffeef6c66c70b44fa2f248501e0d52a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputName: {fileID: 8500700197538903057}
+  playerName: 
 --- !u!1 &3506283702950805128
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,8 +282,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

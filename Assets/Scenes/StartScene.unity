@@ -381,13 +381,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerName
       objectReference: {fileID: 0}
-    - target: {fileID: 3122848075432917657, guid: 93e7d80ba276ae34597a609f9bac6bce, type: 3}
-      propertyPath: m_IsActive
-      value: 1
+    - target: {fileID: 6188600854534443876, guid: 93e7d80ba276ae34597a609f9bac6bce, type: 3}
+      propertyPath: m_fontSize
+      value: 40
       objectReference: {fileID: 0}
-    - target: {fileID: 8500700197538903057, guid: 93e7d80ba276ae34597a609f9bac6bce, type: 3}
-      propertyPath: m_GlobalPointSize
-      value: 32
+    - target: {fileID: 6188600854534443876, guid: 93e7d80ba276ae34597a609f9bac6bce, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 9080795765397589141, guid: 93e7d80ba276ae34597a609f9bac6bce, type: 3}
       propertyPath: m_Pivot.x
