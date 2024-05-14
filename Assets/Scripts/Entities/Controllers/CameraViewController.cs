@@ -30,4 +30,9 @@ public class CameraViewController : MonoBehaviour
         //타겟 위치를 카메라 위치에 넣어줌
         cameraView.transform.position = moveDirection;
     }
+
+    public void SetTarget(GameObject target)
+    {
+        Target = target;
+    }
 }

@@ -19,6 +19,7 @@ public class CharacterNameSet : MonoBehaviour
         {
             //플레이어 이름 저장
             PlayerPrefs.SetString("PlayerName", playerName);
+            DontDestroyOnLoad(gameObject);
 
             //게임시작
             SceneManager.LoadScene("MainScene");

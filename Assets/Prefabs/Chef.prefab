@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1520548758147347889}
   - component: {fileID: 3572460029220449939}
   - component: {fileID: 4805533374078857214}
+  - component: {fileID: 182182475045785509}
   m_Layer: 8
   m_Name: Chef
   m_TagString: Untagged
@@ -31,7 +32,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 691198541994749004}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12.48078, y: -13.117485, z: 2.782499}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -191,6 +192,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterRenderer: {fileID: 6580914009269916472}
+--- !u!114 &182182475045785509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691198541994749004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 194bab5e7b26bc347a4b4051fa3f095a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 691198541994749004}
 --- !u!1 &1609888519866939039
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,7 +352,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e0d1df2c6ba8e84da2136aa8b20c0d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Target: {fileID: 691198541994749004}
   playerNameText: {fileID: 6754428926528733075}
+  nameTransform: {fileID: 0}
 --- !u!1 &4077983499584834068
 GameObject:
   m_ObjectHideFlags: 0
