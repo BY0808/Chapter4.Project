@@ -11,11 +11,14 @@
 7. 캐릭터 선택 시스템 ✔️
 
 선택요구사항
-1. 시간 표시
+1. 시간 표시 ✔️
 2. 인게임 이름 바꾸기
 3. 참석 인원 UI
 4. 인게임 캐릭터 선택
 5. NPC 대화
+
+[자료]<br>
+![_2024_05_14_13_23_34_958-ezgif com-video-to-gif-converter](https://github.com/BY0808/Chapter4.Project/assets/166494058/a7535709-19b1-4966-ad37-ce85a26cf23b)
 
 <details>
 <summary>
@@ -45,9 +48,15 @@
 </details>
 <details>
  <summary>
-  Day3. 버그수정<br>
+  Day3. 버그수정
  </summary>
  1. 카메라가 타겟 따라가지 않는 것 수정<br>
   - 타겟 설정<br>
  2. 수정하면서 이름이 캐릭터 따라가지 않던것 같이 수정됨<br>
+</details>
+<details>
+ <summary>
+  After. 제출 후
+ </summary>
+ 1. 시간 구현<br>
 </details>
